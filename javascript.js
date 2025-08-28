@@ -24,8 +24,8 @@ let humanScore = 0;
 let computerScore = 0;
 
 // Initialising two variables for the human input and computer generated move
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
+let humanSelection;
+let computerSelection;
 
 function playRound(humanChoice, computerChoice) {
 
