@@ -1,6 +1,9 @@
 function getComputerChoice() {
+
+    // Initialising random number
     let randomNumber = Math.random();
-    console.log(randomNumber)
+
+    // Logic to select computer move based on random number
     if (randomNumber < 0.333) {
         return "rock";
     } else if (randomNumber > 0.666) {
@@ -8,4 +11,10 @@ function getComputerChoice() {
     } else {
         return "paper";
     }
+}
+
+function getHumanChoice() {
+
+    // Prompts the user for a selection of rock, paper or scissors
+    return prompt("Rock / Paper / Scissors?");
 }
