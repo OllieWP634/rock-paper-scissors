@@ -16,7 +16,7 @@ function getComputerChoice() {
 function getHumanChoice() {
 
     // Prompts the user for a selection of rock, paper or scissors
-    return prompt("Rock / Paper / Scissors?");
+    return prompt("Rock / Paper / Scissors?").toLowerCase();
 }
 
 // Initialising human score and computer score at 0 before a round is played
