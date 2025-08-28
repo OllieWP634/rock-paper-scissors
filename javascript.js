@@ -35,24 +35,26 @@ function playRound(humanChoice, computerChoice) {
         // Displaying all decisions, then who won the round
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
-        console.log("User wins");
+        console.log("USER");
 
         // Incrementing score based on who won the round
         humanScore++;
     } else if ((humanChoice === 'paper' && computerChoice === 'scissors')||(humanChoice === 'scissors' && computerChoice === 'rock')||(humanChoice === 'rock' && computerChoice === 'paper')) {
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
-        console.log("Computer wins");
+        console.log("COMPUTER");
         computerScore++;
     } else {
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
-        console.log("Draw");
+        console.log("DRAW");
     }
 }
 
-function playGame(humanChoice, computerChoice) {
+function playGame() {
     for (let i = 0; i < 5; i++) {
+        humanSelection = getHumanChoice();
+        computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
     }
 }
