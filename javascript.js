@@ -35,14 +35,14 @@ function playRound(humanChoice, computerChoice) {
         // Displaying all decisions, then who won the round
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
-        console.log("USER");
+        console.log("USER WINS");
 
         // Incrementing score based on who won the round
         humanScore++;
     } else if ((humanChoice === 'paper' && computerChoice === 'scissors')||(humanChoice === 'scissors' && computerChoice === 'rock')||(humanChoice === 'rock' && computerChoice === 'paper')) {
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
-        console.log("COMPUTER");
+        console.log("COMPUTER WINS");
         computerScore++;
     } else {
         console.log("User move:", humanChoice);
@@ -52,6 +52,8 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
+
+    // For loop calling playRound 5 times, updating humanSelection and computerSelection each loop
     for (let i = 0; i < 5; i++) {
         humanSelection = getHumanChoice();
         computerSelection = getComputerChoice();
@@ -74,6 +76,5 @@ function playGame() {
     }
 }
 
+// Calls final playGame function
 playGame(humanSelection, computerSelection);
-
-
