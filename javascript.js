@@ -60,3 +60,17 @@ function playGame() {
 }
 
 playGame(humanSelection, computerSelection);
+
+if (humanScore > computerScore) {
+    console.log("User score:", humanScore);
+    console.log("Computer score:", computerScore);
+    console.log("You win");
+} else if (computerScore > humanScore) {
+    console.log("User score:", humanScore);
+    console.log("Computer score:", computerScore);
+    console.log("Computer wins");
+} else {
+    console.log("User score:", humanScore);
+    console.log("Computer score:", computerScore);
+    console.log("Draw");
+}
