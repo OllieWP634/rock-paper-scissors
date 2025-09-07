@@ -27,32 +27,21 @@ function playRound(humanChoice, computerChoice) {
     // Logic to determine who won based on user and computer input to the function
     if ((humanChoice === 'paper' && computerChoice === 'rock')||(humanChoice === 'scissors' && computerChoice === 'paper')||(humanChoice === 'rock' && computerChoice === 'scissors')) {
 
-        // Displaying all decisions, then who won the round
-        console.log("User move:", humanChoice);
-        console.log("Computer move:", computerChoice);
-        console.log("USER WINS");
-
         // Incrementing score based on who won the round
         humanScore++;
-
         userScoreTally.textContent = humanScore;
 
     } else if ((humanChoice === 'paper' && computerChoice === 'scissors')||(humanChoice === 'scissors' && computerChoice === 'rock')||(humanChoice === 'rock' && computerChoice === 'paper')) {
-        console.log("User move:", humanChoice);
-        console.log("Computer move:", computerChoice);
-        console.log("COMPUTER WINS");
-        computerScore++;
 
+        computerScore++;
         computerScoreTally.textContent = computerScore;
 
     } else {
-        console.log("User move:", humanChoice);
-        console.log("Computer move:", computerChoice);
-        console.log("DRAW");
-        drawScore++;
 
+        drawScore++;
         drawScoreTally.textContent = drawScore;
     }
+
 }
 
 function playGame() {
