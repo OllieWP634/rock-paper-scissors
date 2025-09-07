@@ -16,6 +16,7 @@ function getComputerChoice() {
 // Initialising human score and computer score at 0 before a round is played
 let humanScore = 0;
 let computerScore = 0;
+let drawScore = 0;
 
 // Initialising two variables for the human input and computer generated move
 let humanSelection;
@@ -33,21 +34,29 @@ function playRound(humanChoice, computerChoice) {
 
         // Incrementing score based on who won the round
         humanScore++;
+
+        userScoreTally.textContent = humanScore;
+
     } else if ((humanChoice === 'paper' && computerChoice === 'scissors')||(humanChoice === 'scissors' && computerChoice === 'rock')||(humanChoice === 'rock' && computerChoice === 'paper')) {
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
         console.log("COMPUTER WINS");
         computerScore++;
+
+        computerScoreTally.textContent = computerScore;
+
     } else {
         console.log("User move:", humanChoice);
         console.log("Computer move:", computerChoice);
         console.log("DRAW");
+        drawScore++;
+
+        drawScoreTally.textContent = drawScore;
     }
 }
 
 function playGame() {
 
-    // For loop calling playRound 5 times, updating humanSelection and computerSelection each loop
     computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
     
@@ -71,6 +80,10 @@ const rockButton = document.getElementById('rock');
 const paperButton = document.getElementById('paper');
 const scissorsButton = document.getElementById('scissors');
 
+const container = document.getElementsByClassName('results-container');
+const userScoreTally = document.getElementById('user-score');
+const computerScoreTally = document.getElementById('computer-score');
+const drawScoreTally = document.getElementById('draw-score');
 
 const rockPressed = rockButton.addEventListener('click', function() {
     playRound('rock', getComputerChoice());
