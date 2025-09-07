@@ -48,8 +48,6 @@ function playRound(humanChoice, computerChoice) {
 function playGame() {
 
     // For loop calling playRound 5 times, updating humanSelection and computerSelection each loop
-    
-    humanSelection = getHumanChoice();
     computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
     
@@ -69,13 +67,18 @@ function playGame() {
     }
 }
 
-// Calls final playGame function
-playGame(humanSelection, computerSelection);
-
-const rockButton = document.querySelector('#rock');
-const paperButton = document.querySelector('#paper');
-const scissorsButton = document.querySelector('#scissors');
+const rockButton = document.getElementById('rock')
+const paperButton = document.getElementById('paper')
+const scissorsButton = document.getElementById('scissors')
 
 const rockPressed = rockButton.addEventListener('click', function() {
-    playGame(humanSelection, computerSelection);
-})
+    playRound('rock', getComputerChoice());
+});
+
+const paperPressed = paperButton.addEventListener('click', function() {
+    playRound('paper', getComputerChoice());
+});
+
+const scissorsPressed = scissorsButton.addEventListener('click', function() {
+    playRound('scissors', getComputerChoice());
+});
