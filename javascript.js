@@ -42,6 +42,9 @@ function playRound(humanChoice, computerChoice) {
         drawScoreTally.textContent = drawScore;
     }
 
+    if (humanScore === 5 || computerScore === 5) {
+        console.log("WINNER")
+    }
 }
 
 function playGame() {
