@@ -51,6 +51,14 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+function playGame() {
+
+    // For loop calling playRound 5 times, updating humanSelection and computerSelection each loop
+    
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+    
     // Determining final winner and scores of both user and computer
     if (humanScore > computerScore) {
         console.log("User score:", humanScore);
