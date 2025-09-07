@@ -24,7 +24,7 @@ body {
 .main {
     height: 1500px;
     outline: 2px solid red;
-    margin: 100px;
+    margin: 200px;
     margin-top:50px;
     margin-bottom:50px;
 }
@@ -42,8 +42,11 @@ body {
 /* BUTTONS INSIDE BOXES */
 
 button {
-    flex: 1;
     margin: 50px;
+    width: 250px;
+    height: 250px;
+    font-size: 30px;
+    border-radius: 100px;
 }
 
 li {
@@ -71,4 +74,12 @@ li {
 .paper-scissors-box {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 500px;
+}
+
+.rock-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
