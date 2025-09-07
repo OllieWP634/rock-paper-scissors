@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    color: white;
+}
+
+.header, .main, .results-container {
+    display: flex;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #1F2937;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+}
+
+/* FLEXBOX FOR MAIN GAME */
+
+.main {
+    height: 1500px;
+    outline: 2px solid red;
+    margin: 100px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+/* TWO BOXES EITHER SIDE OF GIF */
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    outline: 2px solid black;
+    width: 600px;
+}
+
+/* BUTTONS INSIDE BOXES */
+
+button {
+    flex: 1;
+    margin: 50px;
+}
+
+li {
+    color: black;
+    list-style: none;
+}
+
+/* GIF ELEMENT */
+
+.gif {
+    flex: 1;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    font-size: 16px;
+}
+
+.paper-scissors-box {
+    display: flex;
+    flex-direction: column;
+}
