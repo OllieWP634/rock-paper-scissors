@@ -19,14 +19,20 @@ body {
     gap: 500px;
 }
 
+.header a {
+    text-decoration: none;
+    font-style: none;
+    color: white;
+}
+
 /* FLEXBOX FOR MAIN GAME */
 
 .main {
     height: 1500px;
     outline: 2px solid red;
     margin: 200px;
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 
 /* TWO BOXES EITHER SIDE OF GIF */
@@ -63,12 +69,13 @@ li {
 /* FOOTER */
 
 .footer {
+    display: flex;
     height: 75px;
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
     color: white;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .paper-scissors-box {
@@ -82,4 +89,13 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.results-container {
+    outline: solid red 2px;
+    margin: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: row;
 }
