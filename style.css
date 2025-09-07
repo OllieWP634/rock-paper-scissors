@@ -102,6 +102,11 @@ li {
     flex-direction: row;
 }
 
-.results {
+.user, .computer, .draw {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 2px black solid;
+    flex: 1;
 }
