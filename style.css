@@ -28,11 +28,10 @@ body {
 /* FLEXBOX FOR MAIN GAME */
 
 .main {
-    height: 1250px;
+    height: 1100px;
     outline: 2px solid red;
-    margin: 200px;
-    margin-top:40px;
-    margin-bottom:40px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /* TWO BOXES EITHER SIDE OF GIF */
@@ -49,7 +48,7 @@ body {
 /* BUTTONS INSIDE BOXES */
 
 button {
-    margin: 50px;
+    
     width: 250px;
     height: 250px;
     font-size: 30px;
@@ -94,9 +93,9 @@ li {
 
 .results-container {
     outline: solid red 2px;
-    height: 320px;
+    height: 250px;
     margin: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 0px;
     justify-content: center;
     flex-direction: row;
@@ -109,4 +108,20 @@ li {
     justify-content: center;
     outline: 2px black solid;
     flex: 1;
+    font-size: 40px;
+}
+
+.description {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    outline: solid red 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 25px;
 }
