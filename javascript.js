@@ -67,9 +67,10 @@ function playGame() {
     }
 }
 
-const rockButton = document.getElementById('rock')
-const paperButton = document.getElementById('paper')
-const scissorsButton = document.getElementById('scissors')
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+
 
 const rockPressed = rockButton.addEventListener('click', function() {
     playRound('rock', getComputerChoice());
