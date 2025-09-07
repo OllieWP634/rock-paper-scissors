@@ -28,7 +28,7 @@ body {
 /* FLEXBOX FOR MAIN GAME */
 
 .main {
-    height: 1500px;
+    height: 1250px;
     outline: 2px solid red;
     margin: 200px;
     margin-top:40px;
@@ -43,6 +43,7 @@ body {
     justify-content: center;
     outline: 2px solid black;
     width: 600px;
+    flex-shrink: 0;
 }
 
 /* BUTTONS INSIDE BOXES */
@@ -93,9 +94,14 @@ li {
 
 .results-container {
     outline: solid red 2px;
-    margin: 100px;
+    height: 320px;
+    margin: 200px;
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 0px;
     justify-content: center;
     flex-direction: row;
+}
+
+.results {
+    display: flex;
 }
