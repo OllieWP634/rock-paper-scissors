@@ -13,12 +13,6 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-
-    // Prompts the user for a selection of rock, paper or scissors
-    return prompt("Rock / Paper / Scissors?").toLowerCase();
-}
-
 // Initialising human score and computer score at 0 before a round is played
 let humanScore = 0;
 let computerScore = 0;
@@ -77,3 +71,11 @@ function playGame() {
 
 // Calls final playGame function
 playGame(humanSelection, computerSelection);
+
+const rockButton = document.querySelector('#rock');
+const paperButton = document.querySelector('#paper');
+const scissorsButton = document.querySelector('#scissors');
+
+const rockPressed = rockButton.addEventListener('click', function() {
+    playGame(humanSelection, computerSelection);
+})
