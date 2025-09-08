@@ -78,6 +78,10 @@ body {
 
 .gif {
     flex: 1;
+    outline: 10px solid rgb(61, 73, 112);
+    border-radius: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* TWO BOXES EITHER SIDE OF GIF */
