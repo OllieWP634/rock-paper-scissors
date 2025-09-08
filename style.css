@@ -66,6 +66,7 @@ body {
     text-align: center;
     font-size: 30px;
     font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* FLEXBOX FOR MAIN GAME */
@@ -78,7 +79,7 @@ body {
 
 .gif {
     flex: 1;
-    outline: 10px solid rgb(61, 73, 112);
+    outline: 10px solid rgb(87, 104, 160);
     border-radius: 100px;
     margin-left: 50px;
     margin-right: 50px;
@@ -100,12 +101,15 @@ button {
     width: 250px;
     height: 250px;
     border-radius: 100px;
+    outline: 10px solid black;
+    
 }
 
 .main img {
     width: 250px;
     height: 250px;
     border-radius: 100px;
+    outline: 10px solid black;
 }
 
 li {
@@ -132,8 +136,10 @@ li {
 .results-container {
     flex-direction: row;
     justify-content: center;
-    height: 270px;
-    margin-top: 0px;
+    align-items: center;
+    height: 226px;
+    margin-top: 40px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .user, .computer, .draw {
@@ -142,11 +148,12 @@ li {
     align-items: center;
     justify-content: center;
     flex: 1;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-.user p, .computer p, .draw p { 
+.user p, .computer p, .draw p {
     height: 50px;
+    font-size: 60px;
 }
 
 /* FOOTER */
@@ -159,4 +166,27 @@ li {
     background-color: #1F2937;
     color: white;
     font-size: 25px;
+}
+
+/* GIF TRANSITIONS */
+
+.image_off, #paper:hover .image_on{
+   display:none
+}
+.image_on, #paper:hover .image_off{
+   display:block
+}
+
+.image_off, #scissors:hover .image_on{
+   display:none
+}
+.image_on, #scissors:hover .image_off{
+   display:block
+}
+
+.image_off, #rock:hover .image_on{
+   display:none
+}
+.image_on, #rock:hover .image_off{
+   display:block
 }
