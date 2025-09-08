@@ -63,15 +63,17 @@ function playGame() {
     }
 }
 
+
 const rockButton = document.getElementById('rock');
 const paperButton = document.getElementById('paper');
 const scissorsButton = document.getElementById('scissors');
+const userScoreTally = document.getElementById('user-score');
+const drawScoreTally = document.getElementById('draw-score');
+const computerScoreTally = document.getElementById('computer-score');
 
 const container = document.getElementsByClassName('results-container');
-const userScoreTally = document.getElementById('user-score');
-const computerScoreTally = document.getElementById('computer-score');
-const drawScoreTally = document.getElementById('draw-score');
 
+// Calling playRound based on what button is pressed on webpage
 const rockPressed = rockButton.addEventListener('click', function() {
     playRound('rock', getComputerChoice());
 });
