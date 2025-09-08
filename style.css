@@ -33,7 +33,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 320px;
     font-size: 25px;
 }
 
@@ -48,8 +48,8 @@ body {
 /* FLEXBOX FOR MAIN GAME */
 
 .main {
-    height: 1120px;
-    background-color: rgb(6, 16, 27);
+    height: 1100px;
+    background-color: rgb(47, 74, 92);
     outline: 12px solid #1F2937;
 }
 
@@ -57,6 +57,7 @@ body {
 
 .gif {
     flex: 1;
+    outline: 12px solid #1F2937;
 }
 
 /* TWO BOXES EITHER SIDE OF GIF */
@@ -72,10 +73,14 @@ body {
 /* BUTTONS INSIDE BOXES */
 
 button {
-    
     width: 250px;
     height: 250px;
-    font-size: 30px;
+    border-radius: 100px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
     border-radius: 100px;
 }
 
@@ -89,7 +94,7 @@ li {
     justify-content: space-around;
     gap: 500px;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 .rock-box {
@@ -102,6 +107,7 @@ li {
 
 .results-container {
     flex-direction: row;
+    outline: 12px solid #1F2937;
     background-color: rgb(6, 16, 27);;
     justify-content: center;
     height: 270px;
@@ -110,7 +116,6 @@ li {
 
 .user, .computer, .draw {
     display: flex;
-    outline: 12px solid #1F2937;
     flex-direction: column;
     align-items: center;
     justify-content: center;
