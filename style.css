@@ -4,7 +4,7 @@ body {
     margin: 0px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    background-image: linear-gradient(rgb(51, 70, 77), rgb(17, 17, 71));
+    background-image: linear-gradient(rgb(11, 23, 37), rgb(59, 59, 104));
 }
 
 .header, .main, .results-container {
