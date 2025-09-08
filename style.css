@@ -28,27 +28,29 @@ body {
 /* DESCRIPTION PARAGRAPH */
 
 .description {
-    color: black;
+    background-color: rgb(6, 16, 27);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    outline: solid red 2px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    height: 350px;
     font-size: 25px;
+}
+
+.description-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
 }
 
 /* FLEXBOX FOR MAIN GAME */
 
 .main {
-    height: 1100px;
-    outline: 2px solid red;
-    margin-left: 200px;
-    margin-right: 200px;
+    height: 1120px;
+    background-color: rgb(6, 16, 27);
+    outline: 12px solid #1F2937;
 }
 
 /* GIF ELEMENT */
@@ -63,7 +65,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    outline: 2px solid black;
     width: 600px;
     flex-shrink: 0;
 }
@@ -79,7 +80,6 @@ button {
 }
 
 li {
-    color: black;
     list-style: none;
 }
 
@@ -88,6 +88,8 @@ li {
     flex-direction: column;
     justify-content: space-around;
     gap: 500px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .rock-box {
@@ -100,36 +102,33 @@ li {
 
 .results-container {
     flex-direction: row;
+    background-color: rgb(6, 16, 27);;
     justify-content: center;
-    height: 250px;
-    width: 1520px;
-    margin: 200px;
-    margin-bottom: 20px;
+    height: 270px;
     margin-top: 0px;
 }
 
 .user, .computer, .draw {
     display: flex;
+    outline: 12px solid #1F2937;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    outline: 2px black solid;
     flex: 1;
     font-size: 40px;
 }
 
 .user p, .computer p, .draw p { 
     height: 50px;
-    color: black;
 }
 
 /* FOOTER */
 
 .footer {
     display: flex;
-    height: 75px;
     justify-content: center;
     align-items: center;
+    height: 75px;
     background-color: #1F2937;
     color: white;
     font-size: 25px;
