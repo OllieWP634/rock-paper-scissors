@@ -18,13 +18,35 @@ body {
     height: 75px;
     justify-content: center;
     align-items: center;
-    gap: 500px;
+    gap: 550px;
 }
 
 .header a {
     text-decoration: none;
     font-style: none;
     color: white;
+}
+
+.left-header {
+    width: 200px;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.right-header img {
+    height: 50px;
 }
 
 /* DESCRIPTION PARAGRAPH */
@@ -76,7 +98,7 @@ button {
     border-radius: 100px;
 }
 
-img {
+.main img {
     width: 250px;
     height: 250px;
     border-radius: 100px;
