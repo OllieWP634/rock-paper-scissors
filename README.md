@@ -1,5 +1,7 @@
 # Rock-Paper-Scissors
-A simple **Rock–Paper–Scissors** web game built with **JavaScript**, **HTML**, and **CSS**.
+*A simple Rock–Paper–Scissors web game built with **JavaScript**, **HTML**, and **CSS**.*
+
+## Overview
 Players compete against the computer, with real-time score tracking and responsive UI updates.
 
 ## Features
